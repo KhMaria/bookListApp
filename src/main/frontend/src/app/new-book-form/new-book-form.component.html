@@ -1,0 +1,17 @@
+<mat-card class="book-card">
+    <mat-card-header>
+        <h3>Add new book</h3>
+    </mat-card-header>
+    <mat-card-content>
+        <form name="new-book-form" (ngSubmit)="!bookForm.invalid && addBook()" #bookForm="ngForm">
+            <div>Author:</div> 
+            <div><input name="author" type="text" [(ngModel)]="author" size="25" maxlength="30" #authorName="ngModel"
+                required /></div>
+            <div>Book name:</div> 
+            <div><input name="name" type="text" [(ngModel)]="name" size="25" maxlength="30" #bookName="ngModel" required />
+            </div>
+
+            <button mat-raised-button type="submit">Add</button>
+        </form>
+    </mat-card-content>
+</mat-card>

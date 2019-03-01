@@ -1,0 +1,18 @@
+.layout {
+    width: 100%; margin: auto;
+    position: relative; /* Относительное позиционирование */ 
+}
+.sidebar, .content { position: absolute; }
+.sidebar {
+    background: rgb(255, 255, 255); /* Цвет фона */
+    width: 50%; /* Ширина колонки */
+}
+.content {
+    background: rgb(255, 255, 255); /* Цвет фона */
+    left: 25%; /* Сдвиг вправо */
+    width: 75%; /* Ширина колонки */
+}
+.book-card {
+    max-width: 200px;
+    max-height: 200px;
+}
